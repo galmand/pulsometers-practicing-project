@@ -15,9 +15,18 @@
     line-height: 30px;
     text-align: center;
     text-transform: uppercase;
+    &_white {
+        color: #ffffff;
+        font-size: 36px;
+        text-align: left;
+        line-height: 54px;
+    }
 }
 
 @import 'blocks/promo';
 @import 'blocks/header';
 @import 'blocks/buttons';
 @import 'blocks/benefits';
+@import 'blocks/consultation';
+@import 'blocks/forms';
+@import 'base/media';
