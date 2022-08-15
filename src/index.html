@@ -9,11 +9,13 @@
 	<link rel="stylesheet" href="css/font.css">
   	<!-- <link rel="stylesheet" href="css/slick.css"> -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
+	<!-- <link rel="stylesheet" href="css/animate.min.css"> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
 
-	<section class="promo">
+	<section id="up" class="promo">
 		<div class="container">
 			<header class="header">
 				<a href="#" class="header__logo">
@@ -51,7 +53,7 @@
 				<button data-modal="consultation" class="button button_main">заказать консультацию</button>
 				<div class="promo__link">
 					или
-					<a href="#">Перейти в каталог</a>
+					<a href="#catalog">Перейти в каталог</a>
 				</div>
 			</div>
 
@@ -70,7 +72,7 @@
 					</div>
 				</div>
 				<div class="benefits__item">
-					<img src="icons/heart_icon.png" alt="heart">
+					<img src="icons/heart_icon.png" alt="heart" class="benefits__icon benefits__icon_animated">
 					<div class="benefits__subtitle">Заботимся о здоровье</div>
 					<div class="benefits__descr">
 						Мы работаем для того, чтобы Ваши занятия спортом шли на пользу Вашему здоровью и были в радость Вам и Вашим близким!
@@ -103,18 +105,18 @@
 		</div>
 	</section>
 
-	<section class="carousel">
+	<div class="carousel">
 		<div class="container">
 			<div class="carousel__inner">
 				<div><img src="img/slider_1.png" alt="slide"></div>
 				<div><img src="img/slider_3.png" alt="slide"></div>
 			</div>
-			<button type="button" class="prev"><img src="icons/prev_arrow.png"></button>
-			<button type="button" class="next"><img src="icons/next_arrow.png"></button>
+			<button type="button" class="prev"><img src="icons/prev_arrow.png" alt="button"></button>
+			<button type="button" class="next"><img src="icons/next_arrow.png" alt="button"></button>
 		</div>
-	</section>
+	</div>
 
-	<section class="catalog">
+	<section id="catalog" class="catalog">
 		<div class="container">
 			<h2 class="title">Каталог пульсиметров</h2>
 			<ul class="catalog__tabs">
@@ -291,7 +293,7 @@
 	<section class="reviews">
 		<div class="container">
 			<h2 class="title">Отзывы клиентов</h2>
-			<div class="reviews__item">
+			<div class="reviews__item animate__animated animate__fadeInUp  wow " data-wow-duration="2s" data-wow-delay="0.5s">
 				<img src="img/review_1.png" alt="Ирина Иванченко" class="reviews__img">
 				<div class="reviews__text">
 					<div class="reviews__name">Ирина Иванченко</div>
@@ -307,7 +309,7 @@
 				</div>	
 			</div>
 
-			<div class="reviews__item">
+			<div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.5s">
 				<img src="img/review_2.png" alt="Иван Сёмочкин" class="reviews__img">
 				<div class="reviews__text">
 					<div class="reviews__name">Иван Сёмочкин</div>
@@ -321,7 +323,7 @@
 				</div>
 			</div>	
 
-			<div class="reviews__item">
+			<div class="reviews__item animate__animated animate__fadeInUp wow" data-wow-duration="2s" data-wow-delay="0.5s">
 				<img src="img/review_3.png" alt=">Юлия Дашкина" class="reviews__img">
 				<div class="reviews__text">
 					<div class="reviews__name">Юлия Дашкина</div>
@@ -340,7 +342,7 @@
 
 	<footer class="footer">
 		<div class="footer__map">
-			<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9863043249d262b6d63a09da62f60e0c7c3778ff7cf02f906bc0dd75f1a9a95e&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=false"></script>
+			<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A9863043249d262b6d63a09da62f60e0c7c3778ff7cf02f906bc0dd75f1a9a95e&amp;width=100%25&amp;height=630&amp;lang=ru_RU&amp;scroll=false"></script>
 		</div>
 		<div class="footer__info">
 			<address class="footer__addr">Москва, Мясницкий проезд, д.3с1</address>
@@ -384,15 +386,21 @@
 			<div class="modal__close">&times;</div>
 			<div class="modal__subtitle">Спасибо за вашу заявку!</div>
 			<div class="modal__descr">Наш менеджер свяжется с вами в ближайшее время!</div>
-			<form class="feed-form feed-form_mt25" action="#">
+			<form class="feed-form feed-form_mt25" action="#"></form>
 		</div>
 	</div>
 
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
+	<a href="#up" class="pageup">
+		<img src="icons/chevron-up.svg" alt="up">
+	</a>
+	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 	<script src="js/jquery.validate.min.js"></script>
 	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/wow.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

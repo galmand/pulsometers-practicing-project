@@ -2,3 +2,5 @@ node_modules
 gulpfile.js
 package.json
 package-lock.json
+src/mailer/smart.php
+dist/mailer/smart.php
