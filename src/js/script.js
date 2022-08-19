@@ -6,7 +6,8 @@ $(document).ready(function() {
         slideBy: 'page',
         autoplay: true,
         controls: false,
-        nav: false
+        nav: false,
+        autoplayButtonOutput: false
     });
 
     document.querySelector('.prev').addEventListener('click', function () {
