@@ -1,3 +1,6 @@
+@import 'libs/font';
+@import 'libs/bootstrap-reboot.min';
+
 @import 'base/variables';
 @import 'base/animations';
 
@@ -18,7 +21,7 @@
     text-align: center;
     text-transform: uppercase;
     &_white {
-        color: #ffffff;
+        color: red;
         font-size: 36px;
         text-align: left;
         line-height: 54px;
