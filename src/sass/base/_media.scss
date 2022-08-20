@@ -103,10 +103,10 @@
 			align-items: center;
 		}
 		&__header {
-			font-size: 30px;
+			font-size: 26px;
 		}
 		&__subheader {
-			font-size: 18px;
+			font-size: 16px;
 		}
 		&__icons {
 			display: none;
@@ -131,5 +131,29 @@
 				margin-left: 0;
 			}
 		}
+		&__tab {
+			width: 90px;
+			font-size: 10px;
+		}
+	}
+	.footer {
+		&__info {
+			width: 250px;
+			padding: 40px 10px 20px 10px;
+		}
+		&__addr {
+			font-size: 18px;
+			margin-bottom: 40px;
+		}
+		&__phone {
+			font-size: 18px;
+		}
+	}
+	.feed-form {
+		width: 250px;
+	}
+	.modal {
+		width: 300px;
+		padding: 38px 20px 20px 20px;
 	}
 }
